@@ -13,7 +13,7 @@ Tweeter is a Figma plugin that allows you to create tweet-like frames with custo
 
 ## Architecture 🤖
 
-![App Screenshot](https://raw.githubusercontent.com/sharan3102/figma-plugin/main/Architecture%20Diagram.png)
+![App Screenshot](https://raw.githubusercontent.com/sharan3102/Tweeter/main/Architecture%20Diagram.png)
 
 
 The Tweeter plugin is built using a combination of technologies and external services to provide a seamless experience for users. It consists of the following components:
