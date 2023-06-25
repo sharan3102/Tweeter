@@ -1,6 +1,6 @@
 {
   "name": "tweeter",
-  "id": "1251928421196288373",
+  "id": "PLUGIN_ID",
   "api": "1.0.0",
   "main": "test.js",
   "capabilities": [],
@@ -10,7 +10,7 @@
   ],
   "ui": "ui.html",
   "networkAccess": {
-    "allowedDomains": ["picsum.photos", "raw.githubusercontent.com","https://api.quotable.io"],
+    "allowedDomains": ["picsum.photos", "raw.githubusercontent.com"],
     "reasoning": "Allow all Domains"
   }
 }
