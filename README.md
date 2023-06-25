@@ -1,40 +1,77 @@
-Below are the steps to get your plugin running. You can also find instructions at:
 
-  https://www.figma.com/plugin-docs/plugin-quickstart/
+# Tweeter 🐦
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+Tweeter is a Figma plugin that allows you to create tweet-like frames with customizable text and images. It simplifies the process of designing social media posts or incorporating tweet-style elements into your Figma projects.
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
 
-  https://nodejs.org/en/download/
+## Features 🚀
 
-Next, install TypeScript using the command:
+- Create tweet-like frames with customizable content
+- Customize frame size, color, and styling options
+- Automatically generate timestamp in tweet format
+- Efficiently align and arrange elements using auto-layout
 
-  npm install -g typescript
+## Architecture 🤖
 
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
+![App Screenshot](https://raw.githubusercontent.com/sharan3102/figma-plugin/main/Architecture%20Diagram.png)
 
-  npm install --save-dev @figma/plugin-typings
 
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
+The Tweeter plugin is built using a combination of technologies and external services to provide a seamless experience for users. It consists of the following components:
 
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
+1. **User Interface (UI)** : The UI component is responsible for displaying the plugin interface within Figma. It is built using HTML, CSS, and JavaScript. The UI allows users to interact with the plugin's features and options.
 
-For more information, visit https://www.typescriptlang.org/
+2. **JavaScript (JS) Conversion**: The plugin's codebase is written in TypeScript (TS) and is converted to JavaScript (JS) for compatibility with the Figma plugin environment. This conversion ensures that the plugin can run within the Figma ecosystem.
 
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
+3. **External APIs** :
+- Picsum API: Used to generate random profile pictures for the created frames.
+- Quotable API: Used to fetch random names and tweet messages for the created frames.
 
-We recommend writing TypeScript code using Visual Studio code:
 
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "npm: watch". You will have to do this again every time
-    you reopen Visual Studio Code.
+4. **Figma API Integration** : The plugin leverages the Figma API to interact with the Figma design editor and perform operations such as creating frames, adding images and text nodes, and manipulating the layout of the frames.
 
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+
+## Installation ❤️‍⚡️
+
+To use the Tweeter plugin, follow these steps:
+
+- Go to the Figma Community plugins page or the Figma plugin store.
+-  Search for "Tweeter" in the search bar.
+- Click on the "Install" button next to the Tweeter plugin.
+- The plugin will be added to your Figma workspace.
+
+## Prerequisites 🤖
+
+Before you can use this program, make sure you have the following:
+- Node.js (version 14 or higher)
+- Figma account (to install and use the plugin)
+- Internet connection (to access external APIs for profile pictures, names, and tweet messages)
+
+#### Download Figma 👇🏻
+``` 
+https://www.figma.com/downloads/
+
+```
+
+
+## Usage 🧠
+
+- Select a frame in your Figma project where you want to create a tweet-like element.
+- Open the Tweeter plugin from the Figma menu or Plugins panel.
+- Customize the tweet-like frame by adding text, images, and adjusting the settings.
+- Use the available options and controls to modify the frame appearance.
+- Preview and adjust the design as needed.
+- Save the created tweet-like frame to your Figma project.
+- Use the frame in your designs, presentations, or share it with your team.
+
+
+
+## Contributing ❤️
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+
+
+## Support 🤝🏻
+
+If you need support or have any questions, you can reach out to me at sharan3102@gmail.com
+
