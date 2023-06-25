@@ -73,5 +73,5 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## Support 🤝🏻
 
-If you need support or have any questions, you can reach out to our support team at sharan3102@gmail.com
+If you need support or have any questions, you can reach out to me at sharan3102@gmail.com
 
