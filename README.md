@@ -49,7 +49,6 @@ Before you can use this program, make sure you have the following:
 #### Download Figma 👇🏻
 ``` 
 https://www.figma.com/downloads/
-
 ```
 
 
