@@ -1,3 +1,7 @@
+<meta name="description" content="Create Twitter-style frames with random profiles, names, and tweet messages for absolutely free ⚡️">
+<meta name="title" content="Tweeter">
+
+![Tweeter Cover](Tweeter%20Cover.png)
  
 # Tweeter 🐦
 
