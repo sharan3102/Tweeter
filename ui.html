@@ -1,0 +1,28 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+</style>
+<h2>Tweeter</h2>
+<!-- <p>Count: <input id="count" value="5"></p> -->
+<button id="insert-default">Insert Default Template</button>
+<button id="cancel">Cancel</button>
+<script>
+
+document.getElementById('insert-default').onclick = () => {
+  // const textbox = document.getElementById('count');
+  // const count = parseInt(textbox.value, 10);
+  parent.postMessage({ pluginMessage: { type: 'insert-default'} }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script>
