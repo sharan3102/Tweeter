@@ -1,4 +1,4 @@
-// Display the HTML page 
+// Display the HTML page
 figma.showUI(__html__, { width: 400, height: 600});
 // Set Color Schemes
 const colors = {
@@ -43,10 +43,18 @@ figma.ui.onmessage = async (msg) => {
     tweetFrame.name = 'Tweet'
     try {
       await figma.loadFontAsync({ family: 'Inter', style: 'Regular' })
+      await figma.loadFontAsync({ family: 'Inter', style: 'Medium' })
+      await figma.loadFontAsync({ family: 'Inter', style: 'Bold' })
+      const dynamicData = await fetch('https://api.quotable.io/quotes/random?minLength=95&maxLength=110');
       const image = await figma.createImageAsync('https://picsum.photos/200')
       const iconUrl = 'https://raw.githubusercontent.com/sharan3102/figma-plugin/main/VerifiedIcon.png'
       const icon = await figma.createImageAsync(iconUrl)
-
+      
+      const data = await dynamicData.json();
+      const quote = data[0].content;
+      const author = data[0].author;
+      const auth = author.split(" ")
+      
       // Create Profile picture
       const profilePicture = figma.createEllipse()
       profilePicture.resize(52, 52)
@@ -70,23 +78,20 @@ figma.ui.onmessage = async (msg) => {
       }]     
 
 
-      await figma.loadFontAsync({ family: 'Inter', style: 'Bold' })
-      await figma.loadFontAsync({ family: 'Inter', style: 'Medium' })
-
       const displayName = figma.createText()
-      displayName.characters = "Mark Spencer"
+      displayName.characters = author || "Mark Spencer"
       displayName.fontSize = 14
       displayName.fontName = { family: 'Inter', style: 'Bold' }
       displayName.fills = [{ type: 'SOLID', color: colors.primaryText }]
 
       const userName = figma.createText()
-      userName.characters = "@markwrites"
+      userName.characters = `@${auth[0]}`|| "@markwrites"
       userName.fontSize = 12
       userName.fontName = { family: 'Inter', style: 'Regular' }
       userName.fills = [{ type: 'SOLID', color: colors.secondaryText }]
       
       const tweetMessage = figma.createText()
-      tweetMessage.characters = "Why did the computer go to the doctor? Because it had a virus and couldn't stop coughing up SPAM emails! 🤧💌😄"
+      tweetMessage.characters = quote ||"Why did the computer go to the doctor? Because it had a virus and couldn't stop coughing up SPAM emails! 🤧💌😄"
       tweetMessage.fontSize = 16
       tweetMessage.fontName = { family: 'Inter', style: 'Regular' }
       tweetMessage.fills = [{ type: 'SOLID', color: colors.primaryText }]
