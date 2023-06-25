@@ -10,7 +10,7 @@
   ],
   "ui": "ui.html",
   "networkAccess": {
-    "allowedDomains": ["picsum.photos", "raw.githubusercontent.com"],
+    "allowedDomains": ["picsum.photos", "raw.githubusercontent.com","https://api.quotable.io"],
     "reasoning": "Allow all Domains"
   }
 }
