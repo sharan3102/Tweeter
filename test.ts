@@ -1,4 +1,4 @@
-// Display the HTML page
+// Display the HTML page 
 figma.showUI(__html__, { width: 400, height: 600});
 // Set Color Schemes
 const colors = {
