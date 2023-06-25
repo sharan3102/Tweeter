@@ -1,0 +1,16 @@
+{
+  "name": "tweeter",
+  "id": "PLUGIN_ID",
+  "api": "1.0.0",
+  "main": "test.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html",
+  "networkAccess": {
+    "allowedDomains": ["picsum.photos", "raw.githubusercontent.com"],
+    "reasoning": "Allow all Domains"
+  }
+}
