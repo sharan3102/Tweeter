@@ -46,7 +46,6 @@ figma.ui.onmessage = async (msg) => {
       const image = await figma.createImageAsync('https://picsum.photos/200')
       const iconUrl = 'https://raw.githubusercontent.com/sharan3102/figma-plugin/main/VerifiedIcon.png'
       const icon = await figma.createImageAsync(iconUrl)
-      
 
       // Create Profile picture
       const profilePicture = figma.createEllipse()
