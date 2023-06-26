@@ -1,5 +1,5 @@
 // Display the HTML page
-figma.showUI(__html__, { width: 400, height: 600});
+figma.showUI(__html__, { width: 450, height: 174});
 // Set Color Schemes
 const colors = {
   primaryText: { 
@@ -223,6 +223,6 @@ figma.ui.onmessage = async (msg) => {
     
   }
 
-  // close the plugin
+  // close the plux gin
   figma.closePlugin();
 };
