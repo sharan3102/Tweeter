@@ -3,16 +3,56 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-family: Inter, sans-serif;
+  }
+  h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  button{
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1.5px solid #E5E5E5;
+    background: #FFF;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+  }
+  button:hover{
+    border: 1.5px solid #1A99E5;
+  }
+  .footer{
+    margin: 30px 0 0 0;
+    background-color: rgb(22, 22, 22);
+    color: #FFF;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
   }
 </style>
-<h2>Tweeter</h2>
-<!-- <p>Count: <input id="count" value="5"></p> -->
-<button id="insert-default">Insert Default Template</button>
-<button id="cancel">Cancel</button>
+<h2>Tweeter v1.0</h2>
+<div class="container">
+  <button id="insert-default">Default Tweet</button>
+  <button id="insert-random">Random Tweet</button>
+</div>
+<div class="footer">
+  <p>Made with ❤️ by Sharan</p>
+</div>
 <script>
 
 document.getElementById('insert-default').onclick = () => {
@@ -21,7 +61,7 @@ document.getElementById('insert-default').onclick = () => {
   parent.postMessage({ pluginMessage: { type: 'insert-default'} }, '*')
 }
 
-document.getElementById('cancel').onclick = () => {
+document.getElementById('insert-random').onclick = () => {
   parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
 }
 
